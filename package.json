@@ -9,7 +9,9 @@
     "lint": "eslint",
     "postinstall": "npx prisma generate",
     "db:push": "prisma db push",
-    "db:seed": "tsx prisma/seed.ts"
+    "db:seed": "tsx prisma/seed.ts",
+    "db:init": "npm run db:push && npm run db:seed",
+    "start:railway": "npm run db:push && npm run start"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
