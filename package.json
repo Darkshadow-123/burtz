@@ -7,21 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "prisma generate",
+    "postinstall": "npx prisma generate",
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@libsql/client": "^0.17.3",
+    "@prisma/client": "^5.22.0",
     "@prisma/adapter-libsql": "^7.8.0",
     "better-auth": "^1.6.9",
     "next": "16.2.4",
+    "prisma": "^5.22.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@prisma/client": "^5.22.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -29,7 +30,6 @@
     "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
-    "prisma": "^5.22.0",
     "tsx": "^4.20.6",
     "typescript": "^5"
   }
